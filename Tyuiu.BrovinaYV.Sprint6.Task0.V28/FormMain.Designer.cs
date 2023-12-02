@@ -31,19 +31,19 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task0.V28
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_BYV = new System.Windows.Forms.GroupBox();
+            this.pictureBoxFormula_BYV = new System.Windows.Forms.PictureBox();
             this.textBoxCondition_BYV = new System.Windows.Forms.TextBox();
             this.groupBoxInput_BYV = new System.Windows.Forms.GroupBox();
-            this.textBoxVarX_BYV = new System.Windows.Forms.TextBox();
-            this.pictureBoxFormula_BYV = new System.Windows.Forms.PictureBox();
             this.textBoxX_BYV = new System.Windows.Forms.TextBox();
+            this.textBoxVarX_BYV = new System.Windows.Forms.TextBox();
             this.groupBoxOutput_BYV = new System.Windows.Forms.GroupBox();
             this.textBoxRes_BYV = new System.Windows.Forms.TextBox();
             this.textBoxResult_BYV = new System.Windows.Forms.TextBox();
             this.buttonDone_BYV = new System.Windows.Forms.Button();
             this.buttonHelp_BYV = new System.Windows.Forms.Button();
             this.groupBoxTask_BYV.SuspendLayout();
-            this.groupBoxInput_BYV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_BYV)).BeginInit();
+            this.groupBoxInput_BYV.SuspendLayout();
             this.groupBoxOutput_BYV.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,16 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task0.V28
             this.groupBoxTask_BYV.TabIndex = 0;
             this.groupBoxTask_BYV.TabStop = false;
             this.groupBoxTask_BYV.Text = "Условие";
+            // 
+            // pictureBoxFormula_BYV
+            // 
+            this.pictureBoxFormula_BYV.Image = global::Tyuiu.BrovinaYV.Sprint6.Task0.V28.Properties.Resources.Task0V28;
+            this.pictureBoxFormula_BYV.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_BYV.InitialImage")));
+            this.pictureBoxFormula_BYV.Location = new System.Drawing.Point(219, 19);
+            this.pictureBoxFormula_BYV.Name = "pictureBoxFormula_BYV";
+            this.pictureBoxFormula_BYV.Size = new System.Drawing.Size(244, 39);
+            this.pictureBoxFormula_BYV.TabIndex = 1;
+            this.pictureBoxFormula_BYV.TabStop = false;
             // 
             // textBoxCondition_BYV
             // 
@@ -82,24 +92,6 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task0.V28
             this.groupBoxInput_BYV.TabStop = false;
             this.groupBoxInput_BYV.Text = "Ввод данных";
             // 
-            // textBoxVarX_BYV
-            // 
-            this.textBoxVarX_BYV.Location = new System.Drawing.Point(6, 46);
-            this.textBoxVarX_BYV.Name = "textBoxVarX_BYV";
-            this.textBoxVarX_BYV.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVarX_BYV.TabIndex = 0;
-            this.textBoxVarX_BYV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_BYV_KeyPress);
-            // 
-            // pictureBoxFormula_BYV
-            // 
-            this.pictureBoxFormula_BYV.Image = global::Tyuiu.BrovinaYV.Sprint6.Task0.V28.Properties.Resources.Task0V28;
-            this.pictureBoxFormula_BYV.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFormula_BYV.InitialImage")));
-            this.pictureBoxFormula_BYV.Location = new System.Drawing.Point(219, 19);
-            this.pictureBoxFormula_BYV.Name = "pictureBoxFormula_BYV";
-            this.pictureBoxFormula_BYV.Size = new System.Drawing.Size(244, 39);
-            this.pictureBoxFormula_BYV.TabIndex = 1;
-            this.pictureBoxFormula_BYV.TabStop = false;
-            // 
             // textBoxX_BYV
             // 
             this.textBoxX_BYV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -111,6 +103,14 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task0.V28
             this.textBoxX_BYV.Size = new System.Drawing.Size(111, 13);
             this.textBoxX_BYV.TabIndex = 2;
             this.textBoxX_BYV.Text = "Переменная X:";
+            // 
+            // textBoxVarX_BYV
+            // 
+            this.textBoxVarX_BYV.Location = new System.Drawing.Point(6, 46);
+            this.textBoxVarX_BYV.Name = "textBoxVarX_BYV";
+            this.textBoxVarX_BYV.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVarX_BYV.TabIndex = 0;
+            this.textBoxVarX_BYV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxVarX_BYV_KeyPress);
             // 
             // groupBoxOutput_BYV
             // 
@@ -181,9 +181,9 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task0.V28
             this.Text = "Спринт 6 | Таск 0 | Вариант 28 | Бровина Ю. В.";
             this.groupBoxTask_BYV.ResumeLayout(false);
             this.groupBoxTask_BYV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_BYV)).EndInit();
             this.groupBoxInput_BYV.ResumeLayout(false);
             this.groupBoxInput_BYV.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFormula_BYV)).EndInit();
             this.groupBoxOutput_BYV.ResumeLayout(false);
             this.groupBoxOutput_BYV.PerformLayout();
             this.ResumeLayout(false);
