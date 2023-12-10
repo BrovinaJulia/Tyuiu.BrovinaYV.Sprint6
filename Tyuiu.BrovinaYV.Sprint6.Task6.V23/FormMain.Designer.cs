@@ -42,11 +42,11 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task6.V23
             this.groupBoxInput_BYV = new System.Windows.Forms.GroupBox();
             this.textBoxInput_BYV = new System.Windows.Forms.TextBox();
             this.panelRight_BYV = new System.Windows.Forms.Panel();
+            this.splitter_BYV = new System.Windows.Forms.Splitter();
             this.groupBoxOutput_BYV = new System.Windows.Forms.GroupBox();
             this.textBoxOutput_BYV = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_BYV = new System.Windows.Forms.OpenFileDialog();
             this.toolTip_BYV = new System.Windows.Forms.ToolTip(this.components);
-            this.splitter1 = new System.Windows.Forms.Splitter();
             this.panelTop_BYV.SuspendLayout();
             this.panelTopDown_BYV.SuspendLayout();
             this.groupBoxTask_BYV.SuspendLayout();
@@ -175,13 +175,21 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task6.V23
             // 
             // panelRight_BYV
             // 
-            this.panelRight_BYV.Controls.Add(this.splitter1);
+            this.panelRight_BYV.Controls.Add(this.splitter_BYV);
             this.panelRight_BYV.Controls.Add(this.groupBoxOutput_BYV);
             this.panelRight_BYV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRight_BYV.Location = new System.Drawing.Point(401, 163);
             this.panelRight_BYV.Name = "panelRight_BYV";
             this.panelRight_BYV.Size = new System.Drawing.Size(433, 382);
             this.panelRight_BYV.TabIndex = 3;
+            // 
+            // splitter_BYV
+            // 
+            this.splitter_BYV.Location = new System.Drawing.Point(0, 0);
+            this.splitter_BYV.Name = "splitter_BYV";
+            this.splitter_BYV.Size = new System.Drawing.Size(10, 382);
+            this.splitter_BYV.TabIndex = 7;
+            this.splitter_BYV.TabStop = false;
             // 
             // groupBoxOutput_BYV
             // 
@@ -206,14 +214,6 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task6.V23
             // 
             this.toolTip_BYV.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip_BYV.ToolTipTitle = "Подсказка";
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(10, 382);
-            this.splitter1.TabIndex = 7;
-            this.splitter1.TabStop = false;
             // 
             // FormMain
             // 
@@ -257,7 +257,7 @@ namespace Tyuiu.BrovinaYV.Sprint6.Task6.V23
         private System.Windows.Forms.Button buttonOpenFile_BYV;
         private System.Windows.Forms.OpenFileDialog openFileDialogTask_BYV;
         private System.Windows.Forms.ToolTip toolTip_BYV;
-        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Splitter splitter_BYV;
     }
 }
 
